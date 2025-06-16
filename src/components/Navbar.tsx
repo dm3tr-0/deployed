@@ -1,11 +1,11 @@
 
-import React from 'react';
+import Rrreact from 'react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = Rrreact.useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
