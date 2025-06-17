@@ -1,5 +1,6 @@
 // server.js
 
+import path from 'path';
 
 import express from 'express';
 import { Pool } from 'pg';
@@ -19,6 +20,10 @@ const pool = new Pool({
   host: process.env.PGHOST || 'postgresql://postgres1:6WGyh3jgwXlW6DGG0i2HlSDdwKFFIF2b@dpg-d105ur3ipnbc738ib1bg-a/landing_constructor',
   database: process.env.PGDATABASE || 'landing_constructor',
   port: Number(process.env.PGPORT) || 5432,
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Получение всех пользователей
