@@ -14,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 const pool = new Pool({
-  user: process.env.PGUSER || 'postgres',
-  password: process.env.PGPASSWORD || '1234',
-  host: process.env.PGHOST || 'localhost',
+  user: process.env.PGUSER || 'postgres1',
+  password: process.env.PGPASSWORD || 'postgresql://postgres1:6WGyh3jgwXlW6DGG0i2HlSDdwKFFIF2b@dpg-d105ur3ipnbc738ib1bg-a/landing_constructor',
+  host: process.env.PGHOST || 'postgresql://postgres1:6WGyh3jgwXlW6DGG0i2HlSDdwKFFIF2b@dpg-d105ur3ipnbc738ib1bg-a/landing_constructor',
   database: process.env.PGDATABASE || 'landing_constructor',
   port: Number(process.env.PGPORT) || 5432,
 });
