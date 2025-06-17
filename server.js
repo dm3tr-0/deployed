@@ -23,7 +23,7 @@ const pool = new Pool({
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join('index.html'));
+  res.sendFile(path.join('deployed/src/pages/Index.tsx'));
 });
 
 // Получение всех пользователей
