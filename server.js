@@ -22,9 +22,9 @@ const pool = new Pool({
   port: Number(process.env.PGPORT) || 5432,
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join('deployed/src/pages/Index.tsx'));
-});
+//app.get('/', (req, res) => {
+//  res.sendFile(path.join('deployed/src/pages/Index.tsx'));
+//});
 
 // Получение всех пользователей
 app.get('/api/users', async (req, res) => {
