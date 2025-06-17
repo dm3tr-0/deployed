@@ -82,7 +82,7 @@ const Auth = () => {
     const firebaseUid = userCredential.user.uid;
 
     // 2. Получение внутреннего ID из вашей БД
-    const userResponse = await fetch(`http://localhost:5000/api/user-by-firebase`, {
+    const userResponse = await fetch(`http://localhost:10000/api/user-by-firebase`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ firebase_uid: firebaseUid }),
