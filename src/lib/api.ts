@@ -1,5 +1,5 @@
 // api.ts
-const API_URL = 'http://localhost:5000/api'; // URL вашего сервера
+const API_URL = 'http://localhost:10000/api'; // URL вашего сервера
 
 export const getUserLandings = async (userId) => {
   const response = await fetch(`${API_URL}/landings/${userId}`);
